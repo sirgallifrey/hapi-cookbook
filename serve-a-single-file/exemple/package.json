@@ -1,0 +1,18 @@
+{
+  "name": "exemple",
+  "version": "0.0.1",
+  "description": "Hapi server that serves a single filee",
+  "main": "server.js",
+  "scripts": {
+    "test": "lab -c -L"
+  },
+  "author": "Sirgallifrey <Adilson Schmitt Junior>",
+  "license": "MIT",
+  "dependencies": {
+    "code": "^4.0.0",
+    "hapi": "^15.2.0",
+    "hoek": "^4.1.0",
+    "inert": "^4.0.2",
+    "lab": "^11.2.0"
+  }
+}
