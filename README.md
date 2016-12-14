@@ -1,5 +1,8 @@
 # hapi-cookbook
-Simple Hapi Q&amp;A
+
+A collection of Hapi.js recipes made to be simple, intructive and executable.
+
+Anyone can help to maintain this repo, either by asking quentions, requesting recipes or by sending new ones!
 
 ## Index
 
