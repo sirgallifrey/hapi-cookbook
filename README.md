@@ -6,8 +6,6 @@ Anyone can help to maintain this repo, either by asking quentions, requesting re
 
 ## Index
 
-1. How to serve a single file?
-2. How to serve a directory?
-3. how to proxy to another server?
-4. how to render a view with a template language?
-5. how to set up a cookie-based session?
+1. [Getting started](/getting-started/readme.md)
+2. [How to serve a single file?](/serve-a-single-file/readme.md)
+
