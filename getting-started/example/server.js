@@ -6,10 +6,13 @@ const Hapi = require('hapi');
 // lets create a new server instance
 const server = new Hapi.Server();
 
-// addding a connection to our server so we can access it on localhost:3000
-server.connection({ port: 3000 });
+// adding a connection to our server so we can access it on localhost:3000
+server.connection({
+    port: 3000,
+    host: 'localhost'
+});
 
-//adding our route, pretty straight foward isn't it?
+//adding our route, pretty straight forward isn't it?
 server.route({
     method: 'GET',
     path: '/',

@@ -45,7 +45,19 @@ server.route({
 });
 
 ```
-
+### 3. Start the server
 Now you just have to start the server and should be good to go.
+
+```javascript
+
+server.start((err) => {
+
+    if (err) {
+        throw err;
+    }
+
+    console.log('Server up, try to access ' + server.info.uri + '/index.html');
+});
+```
 
 Don't forget to look the working example and it's tests

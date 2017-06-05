@@ -7,12 +7,15 @@ const Hoek = require('hoek');
 const server = new Hapi.Server();
 
 server.connection({
-    port: 3000
+    port: 3000,
+    host: '127.0.0.1'
 });
 
 server.register(Inert, (err) => {
 
-    Hoek.assert(!err);
+    if (err) {
+        throw err;
+    }
 });
 
 server.route({
@@ -25,9 +28,11 @@ server.route({
 
 server.start((err) => {
 
-    Hoek.assert(!err);
+    if (err) {
+        throw err;
+    }
 
-    console.log('Server runnig, try to access ' + server.info.uri + '/index.html');
+    console.log('Server up, try to access ' + server.info.uri + '/index.html');
 });
 
-module.exports = exports = server;
+exports = module.exports = server;
