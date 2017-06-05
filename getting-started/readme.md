@@ -101,7 +101,7 @@ server.start((err) => {
 
 ```
 
-### 7. The hole thing
+### 7. The whole thing
 
 `index.js`
 ```javascript
